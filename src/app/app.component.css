@@ -1,0 +1,29 @@
+.App{
+    text-align: center;
+    margin: 20px auto 20px auto;
+    width: 500px;
+    min-height: 600px;
+    border: 50px solid rgb(241, 27, 63);
+    padding: 10px;
+}
+
+input.filter, input{
+    width: 90%;
+    border: 2px solid rgba (73, 204, 249, 1.0);
+    margin-right: 10px;
+    padding: 5px;
+    line-height: 17px;
+}
+
+td, th {
+    padding: 10px;
+    /* text-decoration: line-through; */
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+table {
+    width: 100%;
+}

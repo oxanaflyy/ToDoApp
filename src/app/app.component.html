@@ -1,0 +1,24 @@
+<div class="App">
+  
+<h1>{{title}}</h1>
+<p>A place to store the things you have to do!</p>
+
+<input type="text" class="filter" placeholder="Filter your to-dos" ng-model="$ctrl.filter" />
+
+
+
+<table>
+
+  <tr *ngFor="let todo of todo">
+      <td>
+          <button (click)="deleteTodo(todo)" *ngIf='todo.done === false'>Complete</button>
+        </td>
+     <td [ngClass]="{strikethrough: todo.done}">{{todo.label}}</td>
+     <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+     
+  </tr>
+</table>
+
+<input type="text" #newTodo placeholder="Add your to do"/><br>
+<button (click)="addTodo(newTodo.value); newTodo.value=' '">Add</button>
+</div>
